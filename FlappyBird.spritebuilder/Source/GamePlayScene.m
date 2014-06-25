@@ -35,6 +35,7 @@
 // put new methods here
 -(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
+    // will this auto upload to github.com?
     [character flap];
 }
 
