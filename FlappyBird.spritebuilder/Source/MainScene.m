@@ -79,6 +79,7 @@
         CGPoint offset = cloud.position;
         [self removeChild:cloud];
         [_parallaxBackground addChild:cloud z:0 parallaxRatio:_cloudParallaxRatio positionOffset:offset];
+        [self addChild:_parallaxBackground];
     }
     
     for (CCNode *ground in _grounds) {
