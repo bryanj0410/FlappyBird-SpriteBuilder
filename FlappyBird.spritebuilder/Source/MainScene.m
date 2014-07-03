@@ -80,6 +80,8 @@
         [self removeChild:cloud];
         [_parallaxBackground addChild:cloud z:0 parallaxRatio:_cloudParallaxRatio positionOffset:offset];
     }
+    
+    //This line is to get it to add the parallax, but it is wrong because it is adding it in front of the obstacles
     [self addChild:_parallaxBackground];
     
     for (CCNode *ground in _grounds) {
